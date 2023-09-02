@@ -1,14 +1,16 @@
 {
-    "name": "djs-command-handler",
-    "version": "1.0.0",
-    "description": "A Discord.js Command Handler example using Slash Commands and Context Menus",
-    "main": "index.js",
+    "name": "djs-class-handler",
+    "version": "1.2.2",
+    "description": "A Discord.js Command Class Handler example using Slash Commands and Context Menus.",
+    "main": "bot.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "lint": "eslint --ext .js,.ts . ./ --fix",
+        "start": "node bot",
+        "deploy": "node deploy"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NTMNathan/djs-command-handler.git"
+        "url": "git+https://github.com/NTMNathan/djs-class-handler.git"
     },
     "keywords": [
         "discord-bot",
@@ -22,15 +24,21 @@
         "javascript",
         "nodejs"
     ],
-    "author": "Nate#1409",
+    "author": "NTMNathan",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/NTMNathan/djs-command-handler/issues"
+        "url": "https://github.com/NTMNathan/djs-class-handler/issues"
     },
-    "homepage": "https://github.com/NTMNathan/djs-command-handler#readme",
+    "homepage": "https://github.com/NTMNathan/djs-class-handler#readme",
     "dependencies": {
-        "common-tags": "^1.8.0",
-        "discord.js": "^13.1.0",
-        "dotenv": "^10.0.0"
+        "@discordjs/rest": "^2.0.1",
+        "common-tags": "^1.8.2",
+        "discord.js": "^14.13.0",
+        "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.48.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^6.1.1"
     }
 }
